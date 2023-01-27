@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/oboy"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/background_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:background="#803400"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/back_btn_info"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bachground_btn_yumaloq"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_back_reply_svgrepo_com" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="#F69B4C"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:text="About"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </Toolbar>
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingVertical="20dp"
+                android:background="#00FFFFFF"
+                android:paddingHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:background="#00FFFFFF"
+                    android:justificationMode="inter_word"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#783304"
+                    android:text="This game is based on putting the numbers in the square in the correct order. "
+                    android:shadowColor="#000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:background="#00FFFFFF"
+                    android:justificationMode="inter_word"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#783304"
+                    android:text="The difficulty level differs depending on the number of fields in the square"
+                    android:shadowColor="#000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/image_1"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:background="#00FFFFFF"
+                    android:justificationMode="inter_word"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#783304"
+                    android:text="For example, 9-field square (3*3) represents the easy option"
+                    android:shadowColor="#000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/image_2"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"/>
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:background="#00FFFFFF"
+                    android:justificationMode="inter_word"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#783304"
+                    android:text="16-field square (4*4) is of the medium difficulty while the 25-field square (5*5) is the hard option"
+                    android:shadowColor="#000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/image_3"
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:background="#00FFFFFF"
+                    android:justificationMode="inter_word"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#783304"
+                    android:text="The result with the lowest number of moves and the least amount of time will be automatically saved. Even if you have to leave the game for some reasons, you can resume the game from where you've left it."
+                    android:shadowColor="#000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</FrameLayout>
